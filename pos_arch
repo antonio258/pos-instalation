@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pacman -Syyuu --noconfirm
+pacman -S smplayer smplayer-themes conky libreoffice libreoffice-pt-BR discord gimp qbittorrent rhythmbox telegram-desktop htop lm_sensors pulseeffects lsp-plugins jdk8-openjdk java8-openjfx --noconfirm
