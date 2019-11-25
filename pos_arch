@@ -1,4 +1,7 @@
 #!/bin/bash
 
-pacman -Syyuu --noconfirm
-pacman -S smplayer smplayer-themes conky libreoffice libreoffice-pt-BR discord gimp qbittorrent rhythmbox telegram-desktop htop lm_sensors pulseeffects lsp-plugins jdk8-openjdk java8-openjfx --noconfirm
+sudo pacman -Syyuu --noconfirm
+sudo pacman -S smplayer smplayer-themes conky libreoffice libreoffice-pt-BR discord gimp qbittorrent rhythmbox telegram-desktop htop lm_sensors pulseeffects lsp-plugins jdk8-openjdk java8-openjfx --noconfirm
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' .zshrc
